@@ -270,7 +270,7 @@ function updateGame()
 window.onload = function()
 {
 	ctx = document.getElementById('game').getContext('2d');
-  
+
 	// Event listeners
 	document.getElementById('game').addEventListener('click', function(e) {
 		var pos = realPos(e.pageX, e.pageY);
@@ -468,7 +468,7 @@ function drawGame()
 	ctx.textAlign = "left";
 	ctx.font = "10pt sans-serif";
 	ctx.fillStyle = "#000000";
-	ctx.fillText("Frames: " + framesLastSecond, 5, 15);
+	//ctx.fillText("Frames: " + framesLastSecond, 5, 15);
 
 	// Update the lastFrameTime
 	lastFrameTime = currentFrameTime;
